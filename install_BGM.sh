@@ -14,3 +14,6 @@ chmod +x BGM_Install.sh
 }
 MADMODDER
 fi
+if [ ! -d "~/RetroPie/BGM" ]; then
+mkdir ~/RetroPie/BGM
+fi
