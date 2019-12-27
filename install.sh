@@ -4,7 +4,7 @@ if [ -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR allready exists. PLEASE REMOVE IT FIRST!"
 fi
 if [ ! -d "$INSTALLDIR" ]; then
-echo "Directory $INSTALLDIR DOES NOT exists."
+echo "Directory $INSTALLDIR DOES NOT exist."
 cd ~
 git clone https://github.com/itsdarklikehell/RetroPie-With-Bgm
 cd RetroPie-With-Bgm
