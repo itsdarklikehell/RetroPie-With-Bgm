@@ -1,0 +1,11 @@
+# get Raspbian or Retropie
+
+# get Retropie BGM
+# make musicdir "mkdir ~/RetroPie/BGM" 
+# set up a startup sound eg: "~/RetroPie/BGM/startup.mp3"
+
+# get youtube downloader
+# download a playlist with mp3 music to "~/RetroPie/BGM"
+
+# autostart BGM player.
+# restart and hopefully PROFIT!
