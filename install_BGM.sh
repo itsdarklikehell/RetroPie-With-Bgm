@@ -4,7 +4,7 @@ if [ -f "$INSTALLDIR" ]; then
 echo "File $INSTALLDIR allready exists."
 fi
 if [ ! -f "$INSTALLDIR" ]; then
-sudo apt-get install mpg123
+sudo apt-get install -y mpg123
 cd ~
 MADMODDER(){
 git clone https://github.com/madmodder123/retropie_music_overlay
