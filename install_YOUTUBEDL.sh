@@ -11,5 +11,7 @@ fi
 if [ ! -d "~/bin" ]; then
 mkdir ~/bin
 fi
-cp dl-mp3 ~/bin/dl-mp3
+cp ~/RetroPie-With-BGM/dl-mp3 ~/bin/dl-mp3
 chmod a+rx ~/bin/dl-mp3
+cd ~/RetroPie/BGM
+dl-mp3 --output startup.mp3 https://youtu.be/OMm1RLF32ig 
