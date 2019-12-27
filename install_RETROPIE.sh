@@ -1,5 +1,5 @@
 #!/bin/bash
-INSTALLDIR="~/RetroPie-Setup"
+INSTALLDIR=~/RetroPie-Setup
 if [ -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR allready exists."
 fi
