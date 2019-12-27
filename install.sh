@@ -6,4 +6,4 @@ chmod +x *.sh
 ./install_RETROPIE.sh
 ./install_YOUTUBEDL.sh
 ./install_BGM.sh
-
+./install_RETROPIEEXTRAS.sh
