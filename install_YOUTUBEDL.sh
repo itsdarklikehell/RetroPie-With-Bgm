@@ -11,8 +11,8 @@ echo "$INSTALLDIR allready installed."
 fi
 if [ ! -d "$INSTALLDIR" ]; then
 echo "$INSTALLDIR DOES NOT exist."
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
+sudo curl -sSL https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod +x /usr/local/bin/youtube-dl
 fi
 if [ ! -d "~/bin" ]; then
 mkdir ~/bin
