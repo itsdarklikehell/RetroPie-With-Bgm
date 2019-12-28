@@ -4,6 +4,7 @@ RETROPIEDIR=~/RetroPie
 if [ ! -d "$RETROPIEDIR" ]; then
 echo "$RETROPIEDIR NOT FOUND. STOPPING"
 echo "run install_RETROPIE.sh first."
+exit 0
 fi
 if [ -d "$INSTALLDIR" ]; then
 echo "$INSTALLDIR allready installed."
