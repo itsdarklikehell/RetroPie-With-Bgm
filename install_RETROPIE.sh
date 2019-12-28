@@ -1,16 +1,19 @@
 #!/bin/bash
-INSTALLDIR=~/RetroPie-Setup
-if [ -d "$INSTALLDIR" ]; then
-echo "Directory $INSTALLDIR allready exists."
+source config.ini
+
+if [ -d "~/RetroPie-Setup" ]; then
+echo "Directory allready exists."
 fi
-if [ ! -d "$INSTALLDIR" ]; then
-echo "Directory $INSTALLDIR DOES NOT exist."
+if [ ! -d "~/RetroPie-Setup" ]; then
+echo "Directory $RETROPIESETUP DOES NOT exist."
 sudo apt-get update && sudo apt-get upgrade -y
 sudo update-locale LC_ALL="en_US.UTF-8"
-sudo apt-get install -y git lsb-release byobu whiptail youtube-dl
+sudo apt-get install -y git lsb-release byobu 
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 fi
+
+echo "running retropie_setup.sh"
 cd ~/RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
