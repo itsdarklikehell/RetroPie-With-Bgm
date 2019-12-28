@@ -1,5 +1,4 @@
 #!/bin/bash
-source config.ini
 sudo apt-get install -y git lsb-release byobu 
 if [ -d "~/RetroPie-Setup" ]; then
 echo "Directory ~/RetroPie-Setup allready exists. Skipping Download."
