@@ -19,10 +19,10 @@ fi
 if [ ! -d "~/bin" ]; then
 mkdir ~/bin
 fi
-cp ~/RetroPie-With-BGM/dl-mp3 ~/bin/dl-mp3
-cp ~/RetroPie-With-BGM/dl-mp3 ~/bin/dl-mp4
+cp dl-mp3 ~/bin/dl-mp3
+cp dl-mp4 ~/bin/dl-mp4
 chmod +x ~/bin/dl-mp3
-chmod +x ~/bin/dl-mp5
+chmod +x ~/bin/dl-mp4
 if [ ! -d "~/RetroPie/BGM" ]; then
 mkdir ~/RetroPie/BGM
 fi
