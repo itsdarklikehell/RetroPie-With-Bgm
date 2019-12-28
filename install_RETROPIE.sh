@@ -5,7 +5,7 @@ if [ -d "~/RetroPie-Setup" ]; then
 echo "Directory allready exists."
 fi
 if [ ! -d "~/RetroPie-Setup" ]; then
-echo "Directory $RETROPIESETUP DOES NOT exist."
+echo "Directory ~/RetroPie-Setup DOES NOT exist."
 sudo apt-get update && sudo apt-get upgrade -y
 sudo update-locale LC_ALL="en_US.UTF-8"
 sudo apt-get install -y git lsb-release byobu 
