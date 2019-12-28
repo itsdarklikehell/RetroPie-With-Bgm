@@ -1,5 +1,10 @@
 #!/bin/bash
 INSTALLDIR=/usr/local/bin/youtube-dl
+RETROPIEDIR=~/RetroPie
+if [ ! -d "$RETROPIEDIR" ]; then
+echo "$RETROPIEDIR NOT FOUND. STOPPING"
+echo "run install_RETROPIE.sh first."
+fi
 if [ -d "$INSTALLDIR" ]; then
 echo "$INSTALLDIR allready installed."
 fi
