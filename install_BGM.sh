@@ -21,6 +21,7 @@ YTDLOC=$(command -v youtube-dl)
 if [ ! -f "$YTDLOC" ]; then
 echo "youtube-dl was not found"
 echo "run install_YOUTUBEDL.sh first."
+./install_YOUTUBEDL.sh
 fi
 if [ -f "$YTDLOC" ]; then
 echo "youtube-dl was found, downloading some BGM."
