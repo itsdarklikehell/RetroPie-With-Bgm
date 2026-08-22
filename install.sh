@@ -2,6 +2,7 @@
 INSTALLDIR=~/RetroPie-With-Bgm
 if [ -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR allready exists. PLEASE REMOVE IT FIRST!"
+exit 1
 fi
 if [ ! -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR DOES NOT exist."

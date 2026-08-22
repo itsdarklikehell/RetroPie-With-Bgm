@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo apt-get install -y git lsb-release byobu 
-if [ -d "~/RetroPie-Setup" ]; then
+if [ -d "$HOME/RetroPie-Setup" ]; then
 echo "Directory ~/RetroPie-Setup allready exists. Skipping Download."
 fi
-if [ ! -d "~/RetroPie-Setup" ]; then
+if [ ! -d "$HOME/RetroPie-Setup" ]; then
 echo "Directory ~/RetroPie-Setup DOES NOT exist."
 sudo apt-get update && sudo apt-get upgrade -y
 sudo update-locale LC_ALL="en_US.UTF-8"
