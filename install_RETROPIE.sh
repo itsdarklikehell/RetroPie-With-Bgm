@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 sudo apt-get install -y git lsb-release byobu 
 if [ -d "$HOME/RetroPie-Setup" ]; then
 echo "Directory ~/RetroPie-Setup allready exists. Skipping Download."

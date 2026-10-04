@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 if [ -f "$HOME/BGM.py" ]; then
 echo "File ~/BGM.py allready exists."
 fi

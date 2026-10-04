@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 YTDLOC=$(command -v youtube-dl)
 RETROPIEDIR=~/RetroPie
 if [ ! -d "$RETROPIEDIR" ]; then
