@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 INSTALLDIR=~/RetroPie-Extra
 if [ -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR allready exists."

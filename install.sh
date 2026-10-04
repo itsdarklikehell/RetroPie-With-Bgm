@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 INSTALLDIR=~/RetroPie-With-Bgm
 if [ -d "$INSTALLDIR" ]; then
 echo "Directory $INSTALLDIR allready exists. PLEASE REMOVE IT FIRST!"
