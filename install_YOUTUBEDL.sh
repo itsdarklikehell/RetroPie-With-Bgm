@@ -1,5 +1,5 @@
 #!/bin/bash
-YTDLOC=$(command -v youtube-dl)
+YTDLOC=$(command -v yt-dlp)
 RETROPIEDIR=~/RetroPie
 if [ ! -d "$RETROPIEDIR" ]; then
 echo "$RETROPIEDIR NOT FOUND. STOPPING"
@@ -7,14 +7,14 @@ echo "run install_RETROPIE.sh first."
 ./install_RETROPIE.sh
 fi
 if [ -f "$YTDLOC" ]; then
-echo "youtube-dl allready installed."
+echo "yt-dlp allready installed."
 fi
 if [ ! -f "$YTDLOC" ]; then
-echo "youtube-dl not installed."
+echo "yt-dlp not installed."
 echo "installing it now."
-sudo apt-get install -y youtube-dl
-sudo curl -sSL https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod +x /usr/local/bin/youtube-dl
+sudo apt-get install -y yt-dlp
+sudo curl -sSL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod +x /usr/local/bin/yt-dlp
 fi
 if [ ! -d "$HOME/bin" ]; then
 mkdir -p "$HOME/bin"

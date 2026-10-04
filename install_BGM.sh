@@ -17,14 +17,14 @@ if [ ! -d "$HOME/RetroPie/BGM" ]; then
 mkdir -p "$HOME/RetroPie/BGM"
 fi
 
-YTDLOC=$(command -v youtube-dl)
+YTDLOC=$(command -v yt-dlp)
 if [ ! -f "$YTDLOC" ]; then
-echo "youtube-dl was not found"
+echo "yt-dlp was not found"
 echo "run install_YOUTUBEDL.sh first."
 ./install_YOUTUBEDL.sh
 fi
 if [ -f "$YTDLOC" ]; then
-echo "youtube-dl was found, downloading some BGM."
+echo "yt-dlp was found, downloading some BGM."
 cd ~/RetroPie/BGM || exit 1
 ~/bin/dl-mp3 "https://www.youtube.com/watch?v=IbFEEfNE1YQ&list=PL89Sygaj3zlF_aS6Eo7YwfnqGHsVpXxDy"
 fi
