@@ -1,2 +1,12 @@
 #!/bin/bash
-youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' "$1"
+set -euo pipefail
+
+# dl-mp4 — yt-dlp wrapper voor beste video+audio (mp4)
+# Gebruik: dl-mp4 <URL>
+
+if [ $# -lt 1 ]; then
+    echo "Usage: dl-mp4 <URL>"
+    exit 1
+fi
+
+yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' "$1"

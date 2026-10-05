@@ -1,2 +1,12 @@
 #!/bin/bash
-youtube-dl --extract-audio --audio-format mp3 "$1"
+set -euo pipefail
+
+# dl-mp3 — yt-dlp wrapper voor audio extractie (mp3)
+# Gebruik: dl-mp3 <URL>
+
+if [ $# -lt 1 ]; then
+    echo "Usage: dl-mp3 <URL>"
+    exit 1
+fi
+
+yt-dlp --extract-audio --audio-format mp3 "$1"

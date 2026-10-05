@@ -1,0 +1,25 @@
+# Gource artifacts
+gource.ppm
+gource.mp4
+gource.log
+
+# Downloads
+*.mp3
+*.mp4
+*.m4a
+*.webm
+*.ogg
+*.flac
+*.wav
+*.part
+*.ytdl
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
