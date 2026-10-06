@@ -1,16 +1,19 @@
 #!/bin/bash
+set -euo pipefail
+
 INSTALLDIR=~/RetroPie-With-Bgm
+
 if [ -d "$INSTALLDIR" ]; then
-echo "Directory $INSTALLDIR allready exists. PLEASE REMOVE IT FIRST!"
-exit 1
+    echo "Directory $INSTALLDIR already exists. PLEASE REMOVE IT FIRST!"
+    exit 1
 fi
-if [ ! -d "$INSTALLDIR" ]; then
-echo "Directory $INSTALLDIR DOES NOT exist."
+
+echo "Directory $INSTALLDIR does not exist."
 cd ~
 git clone https://github.com/itsdarklikehell/RetroPie-With-Bgm
 cd RetroPie-With-Bgm
 chmod +x *.sh
-fi
+
 ./install_RETROPIE.sh
 ./install_YOUTUBEDL.sh
 ./install_BGM.sh
