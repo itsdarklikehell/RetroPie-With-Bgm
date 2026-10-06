@@ -1,9 +1,20 @@
 # RetroPie-With-Bgm
-Retropie with bgm, theme notifications, start/stop/volume controls, downloader.
 
+Retropie with BGM, theme notifications, start/stop/volume controls, downloader.
+
+## Installatie
+
+```bash
 curl -sSL https://raw.githubusercontent.com/itsdarklikehell/RetroPie-With-Bgm/master/install.sh | bash
+```
 
----
+Of cloneer handmatig en run:
+
+```bash
+git clone https://github.com/itsdarklikehell/RetroPie-With-Bgm.git
+cd RetroPie-With-Bgm
+./install.sh
+```
 
 ## Installatiescripts
 
@@ -19,7 +30,6 @@ Dit project levert een set installatiescripts voor Raspberry Pi met RetroPie + B
 | `menu.sh` | Simple whiptail menu voor interactieve BGM-configuratie (gebruikt `config.ini`) |
 | `dl-mp3` | `youtube-dl --extract-audio --audio-format mp3` wrapper |
 | `dl-mp4` | `youtube-dl` wrapper voor beste video+audio combineer |
-| `config.ini` | Gebruikt door `menu.sh` voor bits-per fears |
 
 ## Gebruik
 
@@ -28,8 +38,6 @@ Op een Raspberry Pi met Raspbian/RetroPie:
 ```bash
 curl -sSL https://raw.githubusercontent.com/itsdarklikehell/RetroPie-With-Bgm/master/install.sh | bash
 ```
-
-Of cloneer handmatig en run `./install.sh`.
 
 ## 🎥 Gource Visualisatie
 
@@ -52,6 +60,18 @@ ffmpeg -y -r 15 -f image2pipe -vcodec ppm -i gource.ppm \
   -crf 1 -threads 0 -bf 0 gource.mp4
 ```
 
+## Bijdragen
+
+Zie [CONTRIBUTING.md](CONTRIBUTING.md) voor richtlijnen.
+
+## Beveiliging
+
+Zie [SECURITY.md](SECURITY.md) voor het beveiligingsbeleid.
+
+## Licentie
+
+Dit project is gelicenseerd onder de MIT License — zie [LICENSE](LICENSE) voor details.
+
 ## Voltooid
 
 - [x] Retropie-Setup installatie
@@ -62,3 +82,7 @@ ffmpeg -y -r 15 -f image2pipe -vcodec ppm -i gource.ppm \
 - [x] whiptail menu voor interactieve configuratie
 - [x] Gource CI workflow (nbprojekt/gource-action, 1080p/60fps)
 - [x] Gource video in repo (geautomatiseerd per push)
+- [x] ShellCheck CI workflow
+- [x] Error handling (set -euo pipefail) in alle scripts
+- [x] Bugfixes (command -v checks, typos)
+- [x] Documentatie (CONTRIBUTING, SECURITY, LICENSE)
